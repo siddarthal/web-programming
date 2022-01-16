@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        
+        .box{
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            display: inline-block;
+        }
+        #box3{
+            /* position: relative;
+            left: 330px;
+            top: 20px; */
+            /* relative: relative to its normal position and will leave */
+            /* position: absolute;
+            left: 500px;
+            top: 20px; */
+            /* absolute relative to position of its first parwent */
+           /* position: fixed;
+           right: 4px;
+           bottom: 2px; */
+           /* fixed position relative to browser window */
+           /* sticky */
+           position: sticky;
+           top: 3px;
+        }
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 5000px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3 CHAT WITH Users</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
