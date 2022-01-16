@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ramu()
+        {
+             var num=document.myform.num.value;
+             if(isNaN(num))
+             {
+                 document.getElementById("hi").innerHTML="enter numeric value only";
+             
+             return false;
+             }
+             else
+             {
+             return true;
+             }
+                    }
+    </script>
+    <form name="myform" onsubmit="return ramu()">
+    NUMBER=<input type="text" name="num"><span id="hi"></span><div></div>
+    <input type="submit" name="check" >
+</form>
+</body>
+</html>
